@@ -1,0 +1,36 @@
+1) Import book-network as a maven project in IntelliJ
+2) import book-network-ui as angular project
+3) update the db username and password in book-network\src\main\resources\application-dev.yml
+4) open destop docker container
+5) open docker-compose.yml in terminal, and execute the command "docker compose up -d"
+6) Not start the backend
+7) For Ui run npm install
+8) run ng serve
+
+Before login
+1) localhost:9090 //it will open keycloak local ui
+2) need to create a new realm with name "book-social-network"
+3) post that create a client with name "bsn"
+4) Use the following details to create client
+	Client ID *: bsn
+	Root URL : http://localhost:4200
+	Home URL : http://localhost:4200/*
+	Valid redirect URIs : http://localhost:4200/*
+	Valid post logout redirect URIs : http://localhost:4200/*
+	Admin URL : http://localhost:4200
+	Authorization : off
+	Client authentication : off
+Authentication flow
+
+	Standard flow : ticked
+	Direct access grants  : ticked
+	Implicit flow
+	Service accounts roles
+	OAuth 2.0 Device Authorization Grant
+	OIDC CIBA Grant
+
+
+
+
+
+	
